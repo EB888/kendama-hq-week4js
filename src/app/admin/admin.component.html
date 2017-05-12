@@ -1,3 +1,46 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Player to Database</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>New Player Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>New Player Style:</label>
+        <br>
+        <input #newStyle>
+      </div>
+
+      <div>
+        <label>New Player Biography:</label>
+        <br>
+        <textarea #newBiography></textarea>
+      </div>
+      <div>
+        <label>New Player Image URL:</label>
+        <br>
+        <textarea #newImage></textarea>
+      </div>
+      <div>
+        <label>New Player Instagram Link:</label>
+        <br>
+        <textarea #newInstagram></textarea>
+      </div>
+      <div>
+        <label>Other Info About Player:</label>
+        <br>
+        <textarea #newOtherInfo></textarea>
+      </div>
+      <button (click)="submitForm(newName.value, newStyle.value, newBiography.value, newImage.value, newInstagram.value, newOtherInfo.value); newName.value=''; newStyle.value=''; newBiography.value=''; newImage.value=''; newInstagram.value=''; newOtherInfo.value='';">Add New Player</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-player-list></app-player-list>
+</div>

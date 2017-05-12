@@ -1,3 +1,14 @@
-<p>
-  player-list works!
-</p>
+<h2>Player List</h2>
+
+<div *ngFor="let player of players | async" class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em></h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{player.style}}
+      {{player.biography}}
+      <img class="img-responsive" src="{{player.image}}" alt="Picture of {{player.name}}">
+      <hr>
+      <app-edit-player [selectedPlayer]="player"></app-edit-player>
+    </div>
+  </div>
+</div>

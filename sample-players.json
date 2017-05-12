@@ -1,17 +1,26 @@
 { "players": [{
     "name": "TEST",
     "style": "TEST",
-    "bio": "TEST",
+    "biography": "TEST",
+    "image":"TEST",
+    "instagram": "TEST",
+    "otherInfo": "TEST",
     "id": "1"
     }, {
     "name": "TEST2",
     "style": "TEST2",
-    "bio": "TEST2",
+    "biography": "TEST2",
+    "image":"TEST2",
+    "instagram": "TEST2",
+    "otherInfo": "TEST2",
     "id": "2"
       }, {
     "name": "TEST3",
     "style": "TEST3",
-    "bio": "TEST3",
+    "biography": "TEST3",
+    "image":"TEST3",
+    "instagram": "TEST3",
+    "otherInfo": "TEST3",
     "id": "3"
   }]
 }

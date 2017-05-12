@@ -14,6 +14,7 @@ import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { TrickListComponent } from './trick-list/trick-list.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,6 +33,7 @@ export const firebaseConfig = {
     PlayerListComponent,
     PlayerDetailComponent,
     EditPlayerComponent,
+    TrickListComponent,
   ],
   imports: [
     BrowserModule,

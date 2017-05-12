@@ -8,6 +8,7 @@ import { LinksComponent } from './links/links.component';
 import { PlayerListComponent } from './player-list/player-list.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { TrickListComponent } from './trick-list/trick-list.component';
 
 const appRoutes: Routes = [
   {
@@ -34,6 +35,10 @@ const appRoutes: Routes = [
     path: 'links',
     component: LinksComponent
   },
+  {
+    path: 'tricks',
+    component: TrickListComponent
+  }
   // {
   //   path: 'edit-player',
   //   component: EditPlayerComponent

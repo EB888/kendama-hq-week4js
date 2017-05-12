@@ -1,3 +1,23 @@
-<p>
-  edit-player works!
-</p>
+<h4>Edit Player</h4>
+<label>Player Name:</label>
+<input [(ngModel)]="selectedPlayer.name">
+<br>
+<label>Player Style:</label>
+<input [(ngModel)]="selectedPlayer.style">
+<br>
+<label>Player Biography:</label>
+<input [(ngModel)]="selectedPlayer.biography">
+<br>
+<label>Player Image url:</label>
+<input [(ngModel)]="selectedPlayer.image">
+<br>
+<label>Player Instagram Link:</label>
+<input [(ngModel)]="selectedPlayer.instagram">
+<br>
+<label>Other Player Info:</label>
+<input [(ngModel)]="selectedPlayer.otherInfo">
+<button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+<hr>
+<div class="">
+  <button (click)="beginDeletingPlayer(selectedPlayer)">Delete</button>
+</div>
