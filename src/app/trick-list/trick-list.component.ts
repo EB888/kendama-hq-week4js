@@ -13,4 +13,24 @@ export class TrickListComponent implements OnInit {
   ngOnInit() {
   }
 
+  tricks: Trick[] = [
+    new Trick("Lighthouse", "Beginner", "TEST"),
+    new Trick("Lighthouse", "Beginner", "TEST"),
+    new Trick("Lighthouse", "Beginner", "TEST"),
+    new Trick("Lighthouse", "Beginner", "TEST"),
+    new Trick("Lighthouse", "Intermediate", "TEST"),
+    new Trick("Lighthouse", "Intermediate", "TEST"),
+    new Trick("Lighthouse", "Intermediate", "TEST"),
+    new Trick("Lighthouse", "Intermediate", "TEST"),
+    new Trick("Lighthouse", "Advanced", "TEST"),
+    new Trick("Lighthouse", "Advanced", "TEST"),
+    new Trick("Lighthouse", "Advanced", "TEST"),
+    new Trick("Lighthouse", "Advanced", "TEST"),
+    new Trick("Lighthouse", "Pro", "TEST"),
+    new Trick("Lighthouse", "Pro", "TEST"),
+    new Trick("Lighthouse", "Pro", "TEST"),
+    new Trick("Lighthouse", "Pro", "TEST"),
+    new Trick("Lighthouse", "Pro", "TEST")
+  ]
+
 }

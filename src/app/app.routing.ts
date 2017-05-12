@@ -36,7 +36,7 @@ const appRoutes: Routes = [
     component: LinksComponent
   },
   {
-    path: 'tricks',
+    path: 'trick-list',
     component: TrickListComponent
   }
   // {

@@ -1,9 +1,9 @@
-<a href="#">NEW TRICK HERE</a>
-<a href="#">NEW TRICK HERE</a>
-<a href="#">NEW TRICK HERE</a>
-<a href="#">NEW TRICK HERE</a>
-<a href="#">NEW TRICK HERE</a>
-<a href="#">NEW TRICK HERE</a>
-<a href="#">NEW TRICK HERE</a>
-<a href="#">NEW TRICK HERE</a>
-<a href="#">NEW TRICK HERE</a>
+<h2>Trick List</h2>
+
+<ul *ngFor="let trick of tricks" class="panel panel-default">
+  <div class="panel-body">
+    <li>{{trick.name}}</li>
+    <li>{{trick.difficulty}}</li>
+    <li><a href="{{trick.tutorialLink}}">Youtube Tutorial</a></li>
+  </div>
+</ul>
