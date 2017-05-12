@@ -15,6 +15,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { TrickListComponent } from './trick-list/trick-list.component';
+import { DifficultyPipe } from './difficulty.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,6 +35,7 @@ export const firebaseConfig = {
     PlayerDetailComponent,
     EditPlayerComponent,
     TrickListComponent,
+    DifficultyPipe,
   ],
   imports: [
     BrowserModule,

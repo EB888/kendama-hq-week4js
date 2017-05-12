@@ -7,10 +7,15 @@ import { Trick } from '../trick.model';
   styleUrls: ['./trick-list.component.css']
 })
 export class TrickListComponent implements OnInit {
+  filterByDifficulty: string = "allTricks";
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByDifficulty = optionFromMenu;
   }
 
   tricks: Trick[] = [

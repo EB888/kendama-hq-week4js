@@ -1,6 +1,17 @@
 <h2>Trick List</h2>
 
-<ul *ngFor="let trick of tricks" class="panel panel-default">
+<p>All Tricks are currently Displayed.</p>
+<p>To Select a Specific Difficulty of Trick, select an option from below</p>
+<select (change)="onChange($event.target.value)">
+  <option value="allTricks" selected="selected">All Tricks</option>
+  <option value="Beginner">Beginner</option>
+  <option value="Intermediate">Intermediate</option>
+  <option value="Advanced">Advanced</option>
+  <option value="Pro">Pro</option>
+</select>
+<hr>
+
+<ul *ngFor="let trick of tricks | difficulty:filterByDifficulty" class="panel panel-default">
   <div class="panel-body">
     <li>{{trick.name}}</li>
     <li>{{trick.difficulty}}</li>
