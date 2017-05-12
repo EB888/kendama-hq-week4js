@@ -1,0 +1,17 @@
+{ "players": [{
+    "name": "TEST",
+    "style": "TEST",
+    "bio": "TEST",
+    "id": "1"
+    }, {
+    "name": "TEST2",
+    "style": "TEST2",
+    "bio": "TEST2",
+    "id": "2"
+      }, {
+    "name": "TEST3",
+    "style": "TEST3",
+    "bio": "TEST3",
+    "id": "3"
+  }]
+}

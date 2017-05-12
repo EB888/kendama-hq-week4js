@@ -113,7 +113,7 @@ Other functionality includes an 'About' page if you are new to Kendama and wonde
 * Click on 'Go to Console' in the upper right corner of firebase
 * Click 'Add project' and name it whatever you like
 * Next click on 'Add firebase to your Web App' to see a popup with important information
-* Copy all of 'var config = {}', including what's inside the Curly Braces
+* Copy ONLY the part of 'var config = {}' that is INSIDE the curly braces. Everything inside the curly braces. Nothing outside.
 * In between the Curly Braces in `export var masterFirebaseConfig = {};`, paste your the information from Firebase. Save the file.
 * In the top level of this project directory (downloaded from Github), in Terminal, enter these commands:
 <br>
