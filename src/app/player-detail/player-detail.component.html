@@ -1,5 +1,12 @@
-<div>
+<!-- <div>
   <h3>{{(playerToDisplay | async)?.name}}</h3>
   <h4>{{(playerToDisplay | async)?.style}}</h4>
   <p>{{(playerToDisplay | async)?.biography}}</p>
+</div> -->
+<div class="">
+  <img class="img-responsive" src="{{(playerToDisplay | async)?.image}}" alt="Picture of {{(playerToDisplay | async)?.name}}">
+  <p>Style: {{(playerToDisplay | async)?.style}}</p>
+  <p>Bio: {{(playerToDisplay | async)?.biography}}</p>
+  <p><a href="{{(playerToDisplay | async)?.instagram}}">Instagram</a></p>
+  <p>Other Info: {{(playerToDisplay | async)?.otherInfo}}</p>
 </div>
