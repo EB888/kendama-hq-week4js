@@ -1,0 +1,20 @@
+{
+  "name": "kendama-club-week4js",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Evan Bishop <evan.bishop888@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
