@@ -1,0 +1,11 @@
+/*#main-header{
+  color:black
+}*/
+.welcome-image{
+  border-radius: 10px;
+}
+.well{
+  background-color: black;
+  color:#DAA520;
+  border:none;
+}

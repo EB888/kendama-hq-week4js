@@ -23,28 +23,36 @@ body {
 	left:0;
 }
 /*GLOBAL STYLES*/
+/*GLOBAL STYLES*/
+/*GLOBAL STYLES*/
+/*GLOBAL STYLES*/
 #wrapper{
   background-color:#212124;
+  background-image: url('/assets/grafitti2.jpeg');
+  /*background-image: url('/assets/grafitti-background.jpeg');*/
+  background-size:100%;
 }
 #header{
-  background-color:#48484c;
-  height: 75px;
 }
+/*WITHIN CONTENT DIV*/
 #content{
-  color:white;
+  color:#DAA520;
+  /*color:white;*/
 }
 /*FOOTER*/
 #footer{
-  background-color:#48484c;
+  background-color:black;
+  /*background-color:#48484c;*/
   color:white;
 }
 #footer a{
-  color:white;
+  color:#DAA520;
+  /*color:white;*/
 }
 #footer a:hover{
-  color:black;
+  /*color:black;*/
   /*color:#4a148c;*/
-  text-shadow: 1px 1px 1px #0f0;
+  /*text-shadow: 1px 1px 1px #0f0;*/
   border-radius: 10px;
 }
 #github-link{
@@ -59,15 +67,17 @@ body {
 }
 /*NAVBAR*/
 #nav{
-  background-color:#48484c;
+  background-color:black;
+  /*background-color:#48484c;*/
   border:none;
 }
 #nav a{
-  color:white;
+  color:#DAA520;
+  /*color:white;*/
 }
 #nav a:hover{
-  color:black;
-  text-shadow: 1px 1px 1px #0f0;
+  /*color:black;*/
+  /*text-shadow: 1px 1px 1px #0f0;*/
   border-radius: 10px;
   border:2px solid #0f0;
 }

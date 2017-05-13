@@ -1,18 +1,35 @@
-<h2>Player List</h2>
-
-<div *ngFor="let player of players | async" class="panel panel-default">
-  <div class="panel-body">
-    <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em></h3>
-      <img class="img-responsive" src="{{player.image}}" alt="Picture of {{player.name}}">
-      <p>Style: {{player.style}}</p>
-      <p>Bio: {{player.biography}}</p>
-      <div *ngIf="player.instagram">
-        <p><a href="{{player.instagram}}">Instagram</a></p>
+<div class="row">
+  <div class="col-md-8">
+    <h2 class="panel-heading">Player List</h2>
+    <div *ngFor="let player of players | async" class="panel panel-default">
+      <div class="panel-body">
+        <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em></h3>
+        <img class="img-responsive" src="{{player.image}}" alt="Picture of {{player.name}}">
+        <p>Style: {{player.style}}</p>
+        <p>Bio: {{player.biography}}</p>
+        <div *ngIf="player.instagram">
+          <p><a href="{{player.instagram}}">Instagram</a></p>
+        </div>
+        <p>Other Info: {{player.otherInfo}}</p>
+        <hr>
+        <div *ngIf="currentRoute === '/admin'">
+          <app-edit-player [selectedPlayer]="player"></app-edit-player>
+        </div>
       </div>
-      <p>Other Info: {{player.otherInfo}}</p>
-      <hr>
-    <div *ngIf="currentRoute === '/admin'">
-      <app-edit-player [selectedPlayer]="player"></app-edit-player>
+    </div>
+
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">Recent News</h4>
+      </div>
+      <ul>
+        <div class="panel-body">
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+        </div>
+      </ul>
     </div>
   </div>
-</div>

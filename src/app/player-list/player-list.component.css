@@ -1,0 +1,9 @@
+.panel, .panel-body, .panel-default, .panel-heading, .panel-title{
+  background-color: black;
+  color:#DAA520;
+  border:none;
+  border-radius:10px;
+}
+h2{
+  color:black;
+}
