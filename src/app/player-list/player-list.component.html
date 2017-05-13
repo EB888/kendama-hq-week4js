@@ -3,19 +3,23 @@
     <h2 class="panel-heading">Kendama Players <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></h2>
     <div *ngFor="let player of players | async" class="panel panel-default">
       <div class="panel-body">
-        <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> <span class="glyphicon glyphicon-fire" aria-hidden="true"></span></h3>
-        <img class="img-responsive" src="{{player.image}}" alt="Picture of {{player.name}}">
-        <br>
-        <!-- <p><span class="font-green">Style: </span>{{player.style}}</p> -->
-        <!-- <p><span class="font-green">Bio: </span>{{player.biography}}</p> -->
-        <div *ngIf="player.instagram">
-          <p><a href="{{player.instagram}}">Instagram</a></p>
-        </div>
-        <!-- <p><span class="font-green">Other Info: </span>{{player.otherInfo}}</p> -->
-        <hr>
-        <div *ngIf="currentRoute === '/admin'">
-          <app-edit-player [selectedPlayer]="player"></app-edit-player>
-        </div>
+        <!-- <div class="col-md-12"> -->
+          <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> <span class="glyphicon glyphicon-fire" aria-hidden="true"></span></h3>
+          <!-- <div class="text-center"> -->
+            <img class="img-responsive center-block" src="{{player.image}}" alt="Picture of {{player.name}}">
+          <!-- </div> -->
+          <br>
+          <!-- <p><span class="font-green">Style: </span>{{player.style}}</p> -->
+          <!-- <p><span class="font-green">Bio: </span>{{player.biography}}</p> -->
+          <div *ngIf="player.instagram">
+            <p><a href="{{player.instagram}}">Instagram</a></p>
+          </div>
+          <!-- <p><span class="font-green">Other Info: </span>{{player.otherInfo}}</p> -->
+          <hr>
+          <div *ngIf="currentRoute === '/admin'">
+            <app-edit-player [selectedPlayer]="player"></app-edit-player>
+          </div>
+        <!-- </div> -->
       </div>
     </div>
 

@@ -16,13 +16,15 @@
 
   </div>
   <div class="col-md-4">
-    <ul *ngFor="let trick of tricks | difficulty:filterByDifficulty" class="panel panel-default">
-      <div class="panel-body">
-        <li><span class="font-green">Name: </span>{{trick.name}}</li>
-        <li><span class="font-green">Difficulty: </span>{{trick.difficulty}}</li>
-        <li><a href="{{trick.tutorialLink}}">YouTube</a></li>
-      </div>
-    </ul>
+      <ul *ngFor="let trick of tricks | difficulty:filterByDifficulty" class="panel panel-default">
+        <div id="trick-box">
+          <div class="panel-body">
+            <li><span class="font-green">Name: </span>{{trick.name}}</li>
+            <li><span class="font-green">Difficulty: </span>{{trick.difficulty}}</li>
+            <li><a href="{{trick.tutorialLink}}">YouTube</a></li>
+          </div>
+        </div>
+      </ul>
   </div>
   <div class="col-md-4">
 

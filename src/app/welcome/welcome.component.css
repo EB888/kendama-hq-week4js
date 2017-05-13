@@ -3,6 +3,10 @@
 }*/
 .welcome-image{
   border-radius: 10px;
+  /*transition:box-shadow 0.5s;*/
+}
+.welcome-image:hover, .custom-video:hover{
+  box-shadow:10px 10px 40px rgba(0,0,0,.9);
 }
 .well{
   background-color: black;

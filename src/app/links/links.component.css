@@ -9,3 +9,10 @@ h3{
   color: #0f0;
   text-shadow: 2px 2px 2px #DAA520;
 }
+ul{
+  list-style-type: none;
+}
+a:hover{
+  text-decoration: none;
+    color: rgba(244, 4, 192, 1);
+}

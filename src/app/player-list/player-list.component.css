@@ -7,15 +7,16 @@
 h2{
   color:black;
 }
-.container{
+/*.container{
   font-family:'gang_crimeregular';
   letter-spacing:2.5px;
-}
+}*/
 h3{
   font-family:'gang_crimeregular';
-  letter-spacing:4px;
+  letter-spacing:4.5px;
   color: #0f0;
   text-shadow: 2px 2px 2px #DAA520;
+  font-size:2.5em;
 }
 h2, h4{
   font-family:'gang_crimeregular';

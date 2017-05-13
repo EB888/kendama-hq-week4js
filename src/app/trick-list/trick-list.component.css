@@ -3,6 +3,9 @@
   color:#DAA520;
   border:none;
 }
+#trick-box:hover, .panel:hover{
+  box-shadow:10px 10px 20px rgba(0,0,0,.7);
+}
 select{
   color:black;
 }

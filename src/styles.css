@@ -145,3 +145,7 @@ img{
     background-color:rgba(244, 4, 192, 1);
     color:#2e2e30;
 }
+/*PANEL BODIES*/
+/*.panel-body{
+  transition:box-shadow 0.5s;
+}*/
