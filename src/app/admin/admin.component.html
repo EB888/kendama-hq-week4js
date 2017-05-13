@@ -1,6 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Add New Player to Database</h3>
+    <p>You must enter a name and image to successfully save a player</p>
   </div>
   <div class="panel-body">
     <div>
@@ -30,7 +31,7 @@
         <label>Other Info About Player:</label>
         <input #newOtherInfo>
       </div>
-      <button (click)="submitForm(newName.value, newStyle.value, newBiography.value, newImage.value, newInstagram.value, newOtherInfo.value); newName.value=''; newStyle.value=''; newBiography.value=''; newImage.value=''; newInstagram.value=''; newOtherInfo.value='';">Add New Player</button>
+        <button (click)="submitForm(newName.value, newStyle.value, newBiography.value, newImage.value, newInstagram.value, newOtherInfo.value); newName.value=''; newStyle.value=''; newBiography.value=''; newImage.value=''; newInstagram.value=''; newOtherInfo.value='';">Add New Player</button>
     </div>
   </div>
 </div>

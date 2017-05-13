@@ -102,6 +102,10 @@ label{
   width:200px;
   text-align: left;
 }
+#content input{
+  color:black;
+  margin:5px;
+}
 input:focus, input:hover{
   background: #0f0;
 }
@@ -128,4 +132,16 @@ img{
 }*/
 .font-green{
   color: #0f0;
+}
+/*BUTTONS*/
+#content button{
+  color: rgba(244, 4, 192, 1);
+  background-color:#2e2e30;
+  border: none;
+  border-radius:4px;
+  padding:10px;
+}
+#content button:hover{
+    background-color:rgba(244, 4, 192, 1);
+    color:#2e2e30;
 }

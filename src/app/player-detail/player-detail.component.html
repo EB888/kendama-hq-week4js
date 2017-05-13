@@ -3,10 +3,25 @@
   <h4>{{(playerToDisplay | async)?.style}}</h4>
   <p>{{(playerToDisplay | async)?.biography}}</p>
 </div> -->
-<div class="">
-  <img class="img-responsive" src="{{(playerToDisplay | async)?.image}}" alt="Picture of {{(playerToDisplay | async)?.name}}">
-  <p>Style: {{(playerToDisplay | async)?.style}}</p>
-  <p>Bio: {{(playerToDisplay | async)?.biography}}</p>
-  <p><a href="{{(playerToDisplay | async)?.instagram}}">Instagram</a></p>
-  <p>Other Info: {{(playerToDisplay | async)?.otherInfo}}</p>
+<div class="row">
+  <div class="col-md-2">
+
+  </div>
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3><em>{{(playerToDisplay | async)?.name}}</em> <span class="glyphicon glyphicon-fire" aria-hidden="true"></span></h3>
+        <div class="text-center">
+          <img class="img-responsive" src="{{(playerToDisplay | async)?.image}}" alt="Picture of {{(playerToDisplay | async)?.name}}">
+        </div>
+        <br>
+        <p><span class="font-green">Style: </span>{{(playerToDisplay | async)?.style}}</p>
+        <p><span class="font-green">Biography: </span>{{(playerToDisplay | async)?.biography}}</p>
+        <p><span class="font-green">Other Info: </span>{{(playerToDisplay | async)?.otherInfo}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2">
+
+  </div>
 </div>
