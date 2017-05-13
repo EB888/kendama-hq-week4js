@@ -3,3 +3,9 @@
   color:#DAA520;
   border:none;
 }
+h3{
+  font-family:'gang_crimeregular';
+  letter-spacing:2.5px;
+  color: #0f0;
+  text-shadow: 2px 2px 2px #DAA520;
+}

@@ -1,16 +1,17 @@
 <div class="row">
   <div class="col-md-8">
-    <h2 class="panel-heading">Player List</h2>
+    <h2 class="panel-heading">Kendama Players <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></h2>
     <div *ngFor="let player of players | async" class="panel panel-default">
       <div class="panel-body">
-        <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em></h3>
+        <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> <span class="glyphicon glyphicon-fire" aria-hidden="true"></span></h3>
         <img class="img-responsive" src="{{player.image}}" alt="Picture of {{player.name}}">
-        <p>Style: {{player.style}}</p>
-        <p>Bio: {{player.biography}}</p>
+        <br>
+        <p><span class="font-green">Style: </span>{{player.style}}</p>
+        <p><span class="font-green">Bio: </span>{{player.biography}}</p>
         <div *ngIf="player.instagram">
           <p><a href="{{player.instagram}}">Instagram</a></p>
         </div>
-        <p>Other Info: {{player.otherInfo}}</p>
+        <p><span class="font-green">Other Info: </span>{{player.otherInfo}}</p>
         <hr>
         <div *ngIf="currentRoute === '/admin'">
           <app-edit-player [selectedPlayer]="player"></app-edit-player>
@@ -22,13 +23,17 @@
   <div class="col-md-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">Recent News</h4>
+        <h4 class="panel-title">Recent News <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></h4>
+        <hr>
       </div>
       <ul>
         <div class="panel-body">
           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+          <hr>
           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+          <hr>
           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+          <hr>
         </div>
       </ul>
     </div>

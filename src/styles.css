@@ -11,8 +11,11 @@ body {
 }
 #header {
 	/*padding:10px;*/
+  min-height:90px;
+  background-color: black;
 }
 #content {
+  padding-top: 10px;
 	padding-bottom:50px; /* Height of the footer element */
 }
 #footer {
@@ -44,6 +47,8 @@ body {
   background-color:black;
   /*background-color:#48484c;*/
   color:white;
+  font-family:'gang_crimeregular';
+  letter-spacing:2.5px;
 }
 #footer a{
   color:#DAA520;
@@ -52,7 +57,8 @@ body {
 #footer a:hover{
   /*color:black;*/
   /*color:#4a148c;*/
-  /*text-shadow: 1px 1px 1px #0f0;*/
+  color: #0f0;
+  text-shadow: 2px 2px 2px #DAA520;
   border-radius: 10px;
 }
 #github-link{
@@ -66,10 +72,18 @@ body {
   padding-top: 10px;
 }
 /*NAVBAR*/
+.navbar{
+  padding-top:15px;
+  padding-bottom:15px;
+  /*border:0;*/
+  /*margin-bottom:0;*/
+}
 #nav{
   background-color:black;
   /*background-color:#48484c;*/
   border:none;
+  font-family:'gang_crimeregular';
+  letter-spacing:2.5px;
 }
 #nav a{
   color:#DAA520;
@@ -80,6 +94,8 @@ body {
   /*text-shadow: 1px 1px 1px #0f0;*/
   border-radius: 10px;
   border:2px solid #0f0;
+  color: #0f0;
+  text-shadow: 2px 2px 2px #DAA520;
 }
 /*LABELS & INPUTS*/
 label{
@@ -93,4 +109,23 @@ input:focus, input:hover{
 img{
   max-width: 500px;
   max-height: 500px;
+}
+/*FONTS*/
+@font-face {
+    font-family: 'gang_crimeregular';
+    src: url('/assets/gang-font/gang_crime-webfont.woff2') format('woff2'),
+         url('/assets/gang-font/gang_crime-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*.gang-font{
+  font-family:'gang_crimeregular';
+  letter-spacing:2.5px;
+}*/
+/*#wrapper{
+  font-family:'gang_crimeregular';
+  letter-spacing:2.5px;
+}*/
+.font-green{
+  color: #0f0;
 }

@@ -7,3 +7,24 @@
 h2{
   color:black;
 }
+.container{
+  font-family:'gang_crimeregular';
+  letter-spacing:2.5px;
+}
+h3{
+  font-family:'gang_crimeregular';
+  letter-spacing:4px;
+  color: #0f0;
+  text-shadow: 2px 2px 2px #DAA520;
+}
+h2, h4{
+  font-family:'gang_crimeregular';
+  letter-spacing:4.5px;
+  color: #DAA520;
+  text-shadow: 2px 2px 2px #0f0;
+}
+/*ANCHORS*/
+a:hover{
+  color: rgba(244, 4, 192, 1);
+  text-decoration: none;
+}

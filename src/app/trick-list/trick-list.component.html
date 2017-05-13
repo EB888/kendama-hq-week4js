@@ -1,7 +1,7 @@
-<div class="well">
+<div class="well text-center">
   <h2>Trick List</h2>
-  <p>All Tricks are currently Displayed.</p>
-  <p>To Select a Specific Difficulty of Trick, select an option from below</p>
+  <p>All Tricks Are Currently Displayed.</p>
+  <p>To View Tricks Of A Specific Difficulty, Select An Option From Below</p>
   <select (change)="onChange($event.target.value)">
     <option value="allTricks" selected="selected">All Tricks</option>
     <option value="Beginner">Beginner</option>
@@ -9,12 +9,22 @@
     <option value="Advanced">Advanced</option>
     <option value="Pro">Pro</option>
   </select>
+  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 </div>
+<div class="row">
+  <div class="col-md-4">
 
-<ul *ngFor="let trick of tricks | difficulty:filterByDifficulty" class="panel panel-default">
-  <div class="panel-body">
-    <li>{{trick.name}}</li>
-    <li>{{trick.difficulty}}</li>
-    <li><a href="{{trick.tutorialLink}}">Youtube Tutorial</a></li>
   </div>
-</ul>
+  <div class="col-md-4">
+    <ul *ngFor="let trick of tricks | difficulty:filterByDifficulty" class="panel panel-default">
+      <div class="panel-body">
+        <li><span class="font-green">Name: </span>{{trick.name}}</li>
+        <li><span class="font-green">Difficulty: </span>{{trick.difficulty}}</li>
+        <li><a href="{{trick.tutorialLink}}">YouTube</a></li>
+      </div>
+    </ul>
+  </div>
+  <div class="col-md-4">
+
+  </div>
+</div>
