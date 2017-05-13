@@ -1,19 +1,75 @@
-/*GLOBAL*/
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #f5f5f5;
-  padding: 15px;
+/*STYLES FOR STICKY FOOTER*/
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
 }
-body{
-  padding-bottom: 50px;
+#wrapper {
+	min-height:100%;
+	position:relative;
 }
-/*IMAGES*/
-img{
-  max-width: 500px;
-  max-height: 500px;
+#header {
+	/*padding:10px;*/
+}
+#content {
+	padding-bottom:50px; /* Height of the footer element */
+}
+#footer {
+	width:100%;
+	height:50px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+/*GLOBAL STYLES*/
+#wrapper{
+  background-color:#212124;
+}
+#header{
+  background-color:#48484c;
+  height: 75px;
+}
+#content{
+  color:white;
+}
+/*FOOTER*/
+#footer{
+  background-color:#48484c;
+  color:white;
+}
+#footer a{
+  color:white;
+}
+#footer a:hover{
+  color:black;
+  /*color:#4a148c;*/
+  text-shadow: 1px 1px 1px #0f0;
+  border-radius: 10px;
+}
+#github-link{
+  float: right;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+#admin-link{
+  float:left;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+/*NAVBAR*/
+#nav{
+  background-color:#48484c;
+  border:none;
+}
+#nav a{
+  color:white;
+}
+#nav a:hover{
+  color:black;
+  text-shadow: 1px 1px 1px #0f0;
+  border-radius: 10px;
+  border:2px solid #0f0;
 }
 /*LABELS & INPUTS*/
 label{
@@ -22,4 +78,9 @@ label{
 }
 input:focus, input:hover{
   background: #0f0;
+}
+/*PLAYER IMAGES*/
+img{
+  max-width: 500px;
+  max-height: 500px;
 }
