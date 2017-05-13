@@ -1,3 +1,4 @@
+/*GLOBAL*/
 .footer {
   position: fixed;
   bottom: 0;
@@ -9,4 +10,16 @@
 body{
   padding-bottom: 50px;
 }
-/* You can add global styles to this file, and also import other style files */
+/*IMAGES*/
+img{
+  max-width: 500px;
+  max-height: 500px;
+}
+/*LABELS & INPUTS*/
+label{
+  width:200px;
+  text-align: left;
+}
+input:focus, input:hover{
+  background: #0f0;
+}

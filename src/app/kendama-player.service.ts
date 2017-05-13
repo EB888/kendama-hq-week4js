@@ -25,8 +25,12 @@ export class KendamaPlayerService {
   updatePlayer(localUpdatedPlayer){
     var playerEntryInFirebase = this.getPlayerById(localUpdatedPlayer.$key);
     playerEntryInFirebase.update({name: localUpdatedPlayer.name,
-                                style: localUpdatedPlayer.style,
-                                bio: localUpdatedPlayer.bio});
+                                  style: localUpdatedPlayer.style,
+                                  biography: localUpdatedPlayer.biography,
+                                  image: localUpdatedPlayer.image,
+                                  instagram: localUpdatedPlayer.instagram,
+                                  otherInfo: localUpdatedPlayer.otherInfo
+                                });
   }
 
   deletePlayer(localPlayerToDelete){

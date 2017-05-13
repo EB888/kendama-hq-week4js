@@ -6,35 +6,29 @@
     <div>
       <div>
         <label>New Player Name:</label>
-        <br>
         <input #newName>
       </div>
 
       <div>
         <label>New Player Style:</label>
-        <br>
         <input #newStyle>
       </div>
 
       <div>
         <label>New Player Biography:</label>
-        <br>
-        <textarea #newBiography></textarea>
+        <input #newBiography>
       </div>
       <div>
         <label>New Player Image URL:</label>
-        <br>
         <input #newImage>
       </div>
       <div>
         <label>New Player Instagram Link:</label>
-        <br>
         <input #newInstagram>
       </div>
       <div>
         <label>Other Info About Player:</label>
-        <br>
-        <textarea #newOtherInfo></textarea>
+        <input #newOtherInfo>
       </div>
       <button (click)="submitForm(newName.value, newStyle.value, newBiography.value, newImage.value, newInstagram.value, newOtherInfo.value); newName.value=''; newStyle.value=''; newBiography.value=''; newImage.value=''; newInstagram.value=''; newOtherInfo.value='';">Add New Player</button>
     </div>

@@ -6,7 +6,9 @@
       <img class="img-responsive" src="{{player.image}}" alt="Picture of {{player.name}}">
       <p>Style: {{player.style}}</p>
       <p>Bio: {{player.biography}}</p>
-      <p><a href="{{player.instagram}}">Instagram</a></p>
+      <div *ngIf="player.instagram">
+        <p><a href="{{player.instagram}}">Instagram</a></p>
+      </div>
       <p>Other Info: {{player.otherInfo}}</p>
       <hr>
     <div *ngIf="currentRoute === '/admin'">
