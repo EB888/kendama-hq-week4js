@@ -11,6 +11,16 @@
       </div>
 
       <div>
+        <label>New Player Location:</label>
+        <input #newLocation>
+      </div>
+
+      <div>
+        <label>New Player Image URL:</label>
+        <input #newImage>
+      </div>
+
+      <div>
         <label>New Player Style:</label>
         <input #newStyle>
       </div>
@@ -19,19 +29,18 @@
         <label>New Player Biography:</label>
         <input #newBiography>
       </div>
-      <div>
-        <label>New Player Image URL:</label>
-        <input #newImage>
-      </div>
+
       <div>
         <label>New Player Instagram Link:</label>
         <input #newInstagram>
       </div>
+
       <div>
         <label>Other Info About Player:</label>
         <input #newOtherInfo>
       </div>
-        <button (click)="submitForm(newName.value, newStyle.value, newBiography.value, newImage.value, newInstagram.value, newOtherInfo.value); newName.value=''; newStyle.value=''; newBiography.value=''; newImage.value=''; newInstagram.value=''; newOtherInfo.value='';">Add New Player</button>
+
+        <button (click)="submitForm(newName.value, newStyle.value, newBiography.value, newImage.value, newInstagram.value, newOtherInfo.value, newLocation.value); newName.value=''; newStyle.value=''; newBiography.value=''; newImage.value=''; newInstagram.value=''; newOtherInfo.value=''; newLocation.value='';">Add New Player</button>
     </div>
   </div>
 </div>

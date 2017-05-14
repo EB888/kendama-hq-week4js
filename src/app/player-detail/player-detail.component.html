@@ -15,6 +15,7 @@
           <img class="img-responsive" src="{{(playerToDisplay | async)?.image}}" alt="Picture of {{(playerToDisplay | async)?.name}}">
         </div>
         <br>
+        <p><span class="font-green">Location: </span>{{(playerToDisplay | async)?.location}}</p>
         <p><span class="font-green">Style: </span>{{(playerToDisplay | async)?.style}}</p>
         <p><span class="font-green">Biography: </span>{{(playerToDisplay | async)?.biography}}</p>
         <p><span class="font-green">Other Info: </span>{{(playerToDisplay | async)?.otherInfo}}</p>

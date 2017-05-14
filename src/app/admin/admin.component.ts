@@ -15,9 +15,9 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, style: string, biography: string, image: string, instagram: string, otherInfo: string) {
-      var newPlayer: KendamaPlayer = new KendamaPlayer(name, style, biography, image, instagram, otherInfo);
-    if (newPlayer.name && newPlayer.image) {
+  submitForm(name: string, style: string, biography: string, image: string, instagram: string, otherInfo: string, location: string) {
+      var newPlayer: KendamaPlayer = new KendamaPlayer(name, style, biography, image, instagram, otherInfo, location);
+    if (newPlayer.name && newPlayer.image && newPlayer.location) {
       this.playerService.addPlayer(newPlayer);
     }else{
 

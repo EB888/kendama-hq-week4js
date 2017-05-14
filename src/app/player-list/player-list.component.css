@@ -24,8 +24,18 @@ h2, h4{
   color: #DAA520;
   text-shadow: 2px 2px 2px #0f0;
 }
+/*#menu-up{
+  font-size:50px;
+  color:#0f0;
+  border-radius:50%;
+  background-color:black;
+}*/
 /*ANCHORS*/
 a:hover{
   color: rgba(244, 4, 192, 1);
   text-decoration: none;
+}
+/*SELECT BOX*/
+select{
+  color:black;
 }

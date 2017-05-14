@@ -1,29 +1,49 @@
 <div class="row">
+  <!-- <div id="top">
+  Not sure how to link to top of page
+  </div> -->
   <div class="col-md-8">
-    <h2 class="panel-heading">Kendama Players <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></h2>
-    <div *ngFor="let player of players | async" class="panel panel-default">
-      <div class="panel-body">
-        <!-- <div class="col-md-12"> -->
-          <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> <span class="glyphicon glyphicon-fire" aria-hidden="true"></span></h3>
-          <!-- <div class="text-center"> -->
-            <img class="img-responsive center-block" src="{{player.image}}" alt="Picture of {{player.name}}">
-          <!-- </div> -->
-          <br>
-          <!-- <p><span class="font-green">Style: </span>{{player.style}}</p> -->
-          <!-- <p><span class="font-green">Bio: </span>{{player.biography}}</p> -->
-          <div *ngIf="player.instagram">
-            <p><a href="{{player.instagram}}">Instagram</a></p>
-          </div>
-          <!-- <p><span class="font-green">Other Info: </span>{{player.otherInfo}}</p> -->
-          <hr>
-          <div *ngIf="currentRoute === '/admin'">
-            <app-edit-player [selectedPlayer]="player"></app-edit-player>
-          </div>
-        <!-- </div> -->
-      </div>
+    <div class="panel-body">
+      <h2 class="panel-heading">Kendama Players <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></h2>
+      <p>All Players Are Currently Displayed.</p>
+      <p>To View Players in A Specific Location, Select An Option From Below</p>
+      <select (change)="onChange($event.target.value)">
+        <option value="allPlayers" selected="selected">All Players</option>
+        <option value="West Coast">West Coast</option>
+        <option value="East Coast">East Coast</option>
+        <option value="Central US">Central US</option>
+        <option value="Anywhere Else">Anywhere Else</option>
+      </select>
+      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
     </div>
 
+    <br>
+
+    <div class="panel-heading">
+      <h5>Click on A Player's Name to see their profile!</h5>
+    </div>
+
+    <br>
+
+    <div *ngFor="let player of players | async | location:filterByLocation" class="panel panel-default">
+      <div class="panel-body">
+        <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> <span class="glyphicon glyphicon-fire" aria-hidden="true"></span></h3>
+          <img class="img-responsive center-block" src="{{player.image}}" alt="Picture of {{player.name}}">
+        <br>
+        <!-- <p><span class="font-green">Style: </span>{{player.style}}</p> -->
+        <!-- <p><span class="font-green">Bio: </span>{{player.biography}}</p> -->
+        <div *ngIf="player.instagram">
+          <p><a href="{{player.instagram}}">Instagram</a></p>
+        </div>
+        <!-- <p><span class="font-green">Other Info: </span>{{player.otherInfo}}</p> -->
+        <hr>
+        <div *ngIf="currentRoute === '/admin'">
+          <app-edit-player [selectedPlayer]="player"></app-edit-player>
+        </div>
+      </div>
+    </div>
   </div>
+
   <div class="col-md-4">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -42,3 +62,11 @@
       </ul>
     </div>
   </div>
+</div>
+<!-- <div class="row">
+  <div class="col-md-12">
+    <div class="text-center">
+      <a routerLink="player-list"><p><span id="menu-up" class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></p></a>
+    </div>
+  </div>
+</div> -->

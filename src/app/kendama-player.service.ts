@@ -29,7 +29,8 @@ export class KendamaPlayerService {
                                   biography: localUpdatedPlayer.biography,
                                   image: localUpdatedPlayer.image,
                                   instagram: localUpdatedPlayer.instagram,
-                                  otherInfo: localUpdatedPlayer.otherInfo
+                                  otherInfo: localUpdatedPlayer.otherInfo,
+                                  location: localUpdatedPlayer.location
                                 });
   }
 

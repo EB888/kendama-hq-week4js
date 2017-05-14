@@ -28,10 +28,10 @@ Before running the tests make sure you are serving the app via `ng serve`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md). -->
 # _Kendama HQ!_
   <p align="center">
-    <img style="border: 1px solid #00ff00" src="./src/assets/COTK-stumptown-2016.jpeg"/>
+    <img style="border: 1px solid #00ff00" src="./src/assets/kendamareadme.jpeg"/>
   </p>
 
-#### _Nerds Unite! An application for Kendama Players to keep track of their peers, as well as learn more about them. Made with Angular2 <br> 5-5-17_
+#### _Nerds Unite! An application for Kendama Players to keep track of their peers, as well as learn more about the game they love. Made with Angular2 <br> 5-5-17_
 
 #### By _**Evan Bishop**_
 
@@ -39,15 +39,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 1. Configuration/dependencies
 
-  * Typescript and Angular2 are installed
+  * Typescript is installed globally
+  * Angular2 is installed
   * Node.js is installed globally and modules are included when project is initiated with Angular2
-  * Bower is a front-end dependency manager that is installed globally and initiated when the project directory is created
+  * Bower is a front-end dependency manager that is installed globally and initiated after project directory is created
   * Bootstrap is a collection of CSS that is installed with Bower, and manually added in angular-cli.json
 
 
 2. Integration
 
   * Initiate Project With Angular2
+    Generate:
   * welcome component
   * about component
   * admin component
@@ -79,6 +81,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     * Skill Ratings
     * Alphabetically
     * Age
+    * Location
 
 
 ## Description
@@ -86,13 +89,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 _Have you ever been playing Kendama and thought to yourself, "I wish I had a badass profile on a webpage somewhere that showed everyone how Kewl I know I am." Your dreams have come true. With the advent of the Kendama HQ Technology, now everyone can have their own profile page to showcase their sweet skills, or just find new friends!
 <br>
 <br>
-The application allows users to view a list of all Kendama players in the system, and then filter that list by currently undecided criteria. Simply click on one of the players listed, and you will be taken to their profile page!
+The application allows users to view a list of all Kendama players in the system, as well as view a list of tricks that is filterable by difficulty. Simply click on one of the players listed, and you will be taken to their profile page!
 <br>
 <br>
-As an Admin, you are allowed to add new users to the system, as well as edit and delete currently existing users.
+As an Admin, you are allowed to add new users to the system, as well as edit and delete currently existing players.
 <br>
 <br>
-Other functionality includes an 'About' page if you are new to Kendama and wondering what the hell it is, as well as a page to a list of links to further exploration._
+Other functionality includes an 'About' page if you are new to Kendama and wondering what the hell it is, as well as a 'Links' page to allow you to explore further._
 
 <!-- | Behavior | Input Example  | Output Example  |
 |---|---|---|
@@ -127,8 +130,8 @@ Other functionality includes an 'About' page if you are new to Kendama and wonde
 `ng serve`
 <br>
 * A server will begin running at `localhost:4200`
-* In your web browser enter `localhost:4200` to see the page
-* Add, edit, and delete individual players! Experiment and have fun!
+* In your web browser enter the URL `localhost:4200` to see the page
+* Add, edit, and delete individual players! Look up tricks! Experiment and have fun.
 * Finally, notify me of any bugs : (
 
 <!-- _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_ -->

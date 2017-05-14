@@ -4,5 +4,6 @@ export class KendamaPlayer {
               public biography: string,
               public image: string,
               public instagram: string,
-              public otherInfo: string){}
+              public otherInfo: string,
+              public location: string){}
 }
