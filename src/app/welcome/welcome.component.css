@@ -19,7 +19,12 @@ h1{
   color: #0f0;
   text-shadow: 2px 2px 2px #DAA520;
 }
-/*VIDEO*/
-.custom-video{
-  /*margin-left: 20%;*/
+/*CUSTOM PARAGRAPH FOR FEATURED VIDEO*/
+.custom-p{
+  padding:5px;
+  background-color:black;
+  border-radius: 5px;
+}
+iframe{
+  margin-bottom: 3px;
 }

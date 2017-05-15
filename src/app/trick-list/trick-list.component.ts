@@ -18,6 +18,18 @@ export class TrickListComponent implements OnInit {
     this.filterByDifficulty = optionFromMenu;
   }
 
+  count: number = 0;
+  displayYouTube(){
+    // if (this.count = 1){
+    //   this.count = 0;
+    //   return false;
+    // } else if (this.count = 0){
+    //   this.count = 1;
+    //   return true;
+    // }
+    console.log("TEST");
+  }
+
   tricks: Trick[] = [
     new Trick("Moshikame", "Beginner", "https://youtu.be/gyCbfVgVoGg"),
     new Trick("Lighthouse", "Beginner", "https://youtu.be/ppVjCcVCzxg"),

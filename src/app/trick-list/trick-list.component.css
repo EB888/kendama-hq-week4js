@@ -2,8 +2,9 @@
   background-color: black;
   color:#DAA520;
   border:none;
+  border-radius:10px;
 }
-#trick-box:hover, .panel:hover{
+.panel:hover{
   box-shadow:10px 10px 20px rgba(0,0,0,.7);
 }
 select{
@@ -20,3 +21,56 @@ h2{
   padding: 5px;
   border-radius: 5px;
 }*/
+/*LIST*/
+ul{
+  list-style-type: none;
+  /*background-color: rgb(51, 107, 90, 0.9);*/
+}
+/*ANCHORS IN EACH TRICK DIV*/
+ul a{
+    color: #336b5a;
+}
+ul a:hover{
+  text-decoration: none;
+  border:2px solid #336b5a;
+  border-radius:5px;
+  padding:3px;
+  margin-top:5px;
+}
+/*CUSTOM BACKGROUNDS FOR EACH UL/PANEL BODY*/
+#Beginner{
+  border:1px solid black;
+  background-color:black;
+  border-radius: 10px;
+}
+#Intermediate{
+  border:1px solid black;
+  background-color:black;
+  border-radius: 10px;
+}
+#Advanced{
+  border:1px solid black;
+  background-color: black;
+  border-radius: 10px;
+}
+#Pro{
+  border:1px solid black;
+  background-color: black;
+  border-radius: 10px;
+}
+p.Beginner{
+  color:green;
+}
+p.Intermediate{
+  color:yellow;
+}
+p.Advanced{
+  color:red;
+}
+p.Pro{
+  color:purple;
+}
+#god-div{
+  border:none;
+  border-radius:10px;
+}

@@ -11,22 +11,95 @@
   </select>
   <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 </div>
+
 <div class="row">
-  <div class="col-md-4 col-lg-4">
+  <div class="col-md-3 col-lg-3">
 
   </div>
-  <div class="col-md-4 col-lg-4">
-      <ul *ngFor="let trick of tricks | difficulty:filterByDifficulty" class="panel panel-default">
-        <div id="trick-box">
-          <div class="panel-body">
-            <li><span class="font-green">Name: </span>{{trick.name}}</li>
-            <li><span class="font-green">Difficulty: </span>{{trick.difficulty}}</li>
-            <li><a href="{{trick.tutorialLink}}">YouTube</a></li>
+
+  <div class="col-md-6 col-lg-6">
+    <div id="god-div" *ngFor="let trick of tricks | difficulty:filterByDifficulty" class="panel panel-default">
+
+        <div *ngIf="trick.difficulty == 'Beginner'">
+          <div id="Beginner">
+            <div class="panel-body">
+              <div class="col-md-8">
+                <ul>
+                  <li><span class="font-green">Name: </span>{{trick.name}}</li>
+                  <li><span class="font-green">Difficulty: </span>{{trick.difficulty}}</li>
+                  <li><a href="{{trick.tutorialLink}}">Tutorial</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <!-- <div *ngIf="trick.difficulty === 'Beginner'"> -->
+                  <p class="Beginner">{{trick.difficulty}}</p>
+                <!-- </div> -->
+              </div>
+            </div>
           </div>
         </div>
-      </ul>
+
+        <div *ngIf="trick.difficulty == 'Intermediate'">
+          <div id="Intermediate">
+            <div class="panel-body">
+              <div class="col-md-8">
+                <ul>
+                  <li><span class="font-green">Name: </span>{{trick.name}}</li>
+                  <li><span class="font-green">Difficulty: </span>{{trick.difficulty}}</li>
+                  <li><a href="{{trick.tutorialLink}}">Tutorial</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <p class="Intermediate">{{trick.difficulty}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="trick.difficulty == 'Advanced'">
+          <div id="Advanced">
+            <div class="panel-body">
+              <div class="col-md-8">
+                <ul>
+                  <li><span class="font-green">Name: </span>{{trick.name}}</li>
+                  <li><span class="font-green">Difficulty: </span>{{trick.difficulty}}</li>
+                  <li><a href="{{trick.tutorialLink}}">Tutorial</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <p class="Advanced">{{trick.difficulty}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="trick.difficulty == 'Pro'">
+          <div id="Pro">
+            <div class="panel-body">
+              <div class="col-md-8">
+                <ul>
+                  <li><span class="font-green">Name: </span>{{trick.name}}</li>
+                  <li><span class="font-green">Difficulty: </span>{{trick.difficulty}}</li>
+                  <li><a href="{{trick.tutorialLink}}">Tutorial</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <p class="Pro">{{trick.difficulty}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
   </div>
-  <div class="col-md-4 col-lg-4">
+
+  <div class="col-md-3 col-lg-3">
 
   </div>
 </div>
+<!-- <div class="well">
+  <p (click)="displayYouTube()">CLICK TO SEE VIDEO</p>
+  <div *ngIf="">
+    <iframe class="center-block" width="560" height="315" src="https://www.youtube.com/embed/pdt4mzx_bbE" frameborder="1" allowfullscreen>Bonz Atron Pro Edit Video</iframe>
+  </div>
+</div> -->

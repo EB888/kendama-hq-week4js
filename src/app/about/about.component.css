@@ -8,7 +8,17 @@ h1{
 }
 h1{
   font-family:'gang_crimeregular';
-  letter-spacing:2.5px;
+  letter-spacing:4px;
   color: #0f0;
   text-shadow: 2px 2px 2px #DAA520;
+}
+a{
+    color: #336b5a;
+}
+a:hover{
+  text-decoration: none;
+  border:2px solid #336b5a;
+  border-radius:5px;
+  padding:3px;
+  margin-top:5px;
 }
