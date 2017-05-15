@@ -34,7 +34,7 @@ h2, h4{
 a{
     color: #336b5a;
 }
-a:hover{
+p a:hover{
   text-decoration: none;
   border:2px solid #336b5a;
   border-radius:5px;
