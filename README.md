@@ -104,6 +104,22 @@ Other functionality includes an 'About' page if you are new to Kendama and wonde
 |  |  |  |
 |  |  |  | -->
 
+<p align="center">
+  <img style="border: 1px solid #00ff00" src="./src/assets/Kendama4.png"/>
+</p>
+
+<p align="center">
+  <img style="border: 1px solid #00ff00" src="./src/assets/Kendama3.png"/>
+</p>
+
+<p align="center">
+  <img style="border: 1px solid #00ff00" src="./src/assets/Kendama1.png"/>
+</p>
+
+<p align="center">
+  <img style="border: 1px solid #00ff00" src="./src/assets/Kendama2.png"/>
+</p>
+
 ## Setup/Installation Requirements
 
 * Install Angular2 https://v2.angular.io/docs/ts/latest/
