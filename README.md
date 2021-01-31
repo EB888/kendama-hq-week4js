@@ -162,7 +162,6 @@ There are currently no known bugs
 
 <!-- _{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_ -->
 
-_If you have issues, questions, ideas or concerns, please contact me at evan.bishop888@gmail.com_
 
 ## Technologies Used
 
